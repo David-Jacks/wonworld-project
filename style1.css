@@ -2,6 +2,7 @@ html,body{
  margin: auto;
  background-color: black;
  overflow-x: hidden;
+ position: relative;
 }
  
 hr{background-color: blue; height: 2px; 
@@ -21,7 +22,7 @@ p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sa
 
 #navigation-bar li{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: inline;
-    padding: 8%;
+    padding: 5%;
     font-weight: bolder;
     font-size: 20px;
     font-style: oblique;
@@ -32,32 +33,31 @@ p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sa
 div[id=navigation-bar]{
     background-color: blue;
     margin: 0%;
-    padding: 5px;
+    padding: 1px;
     text-align: center;
 
     
 }
 div[id=navigation-bar] a{
     text-decoration: none;
-    color: black;
     font-family: monospace;
 
 }
 div[id=navigation-bar] a:hover{
 background-color: whitesmoke;
-padding: 2%; color: blue !important;
+padding: 1%; color: blue !important;
 padding-bottom: 1%; padding-top: 1%;
 font-family: 'Times New Roman', Times, serif;  
 }
 div[id=content]{
     background-blend-mode: screen;
-    background-color: rgba(247, 247, 6, 0.938);
+    background-color: rgba(252, 252, 8, 0.938);
     background-image: url(img/web3.jpeg);
     background-size: cover;
     margin: auto; padding-top: 5%; padding-bottom: 2%;
     position: relative;
     transform: translate(-0%, +0%);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; opacity: 0.9;
 }
 
 div[id=footer]{
@@ -79,7 +79,7 @@ div[id=footer]{
     top: 30px;  
 }
 #footer li{
-    display: inline;
+    display: inline; text-decoration: none;
     padding: 3%;
     overflow: hidden;
 }
@@ -90,6 +90,7 @@ div[id=footer]{
 }
 div[id=header]{
     background-color: blue;
+    position: relative;
 }
 
 #header h1{
@@ -99,10 +100,68 @@ div[id=header]{
     font-family: monospace;
     font-size: 35px; text-decoration: overline;
 }
+#header img{
+    image-rendering: pixelated;
+    width: 130px; height: 100px;
+    transform: translate(-15%, +15%);
+    position: relative;
+}
 
 #footer img{
     width: 2%; height: 2%;
     transform: translate(-20%, +20%);
     image-rendering: pixelated;
-
+}
+#container1, #container2, #container3{
+    background-color: blue;
+    opacity: 0.9;
+    width: 30%; height: 60%;
+    text-align: justify;
+    border-style: groove;
+    line-height: 25px;
+    position: relative;
+    padding: 4%; color: yellow;
+}
+#container1{
+    position: inherit;
+    transform: translate(+15%, -2.5%);
+    padding-top: 1%;
+}
+#container1:hover{
+background-color: yellow;
+color: black;
+font-style: italic;
+} 
+#container2{
+    position: inherit;
+    transform: translate(+150%, -101%);
+}
+#container2:hover{
+    background-color: yellow;
+    color: black;
+    font-style: italic;
+}
+#container3{
+    position: inherit;
+    transform: translate(+85%, -47%);
+}
+#container3:hover{
+    background-color: yellow;
+    color: black;
+    font-style: italic;
+}
+a{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 20px;
+    color: whitesmoke;
+}
+button{
+    background-color: black;
+}
+button:hover{
+    background-color: blue;
+}
+#content a:hover{
+font-style: italic;
 }
