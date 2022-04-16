@@ -5,7 +5,7 @@ html,body{
  position: relative;
 }
  
-hr{background-color: blue; height: 2px; 
+hr{background-color: black; height: 2px; 
     text-align: left;
 }
 
@@ -31,7 +31,6 @@ p{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sa
 
 
 div[id=navigation-bar]{
-    background-color: blue;
     margin: 0%;
     padding: 1px;
     text-align: center;
@@ -89,13 +88,12 @@ div[id=footer]{
     font-style: italic;
 }
 div[id=header]{
-    background-color: blue;
     position: relative;
 }
 
 #header h1{
-    background-color: blue;
-    color: yellow; margin: auto; 
+    background-color: ;
+    color: white; margin: auto; 
     transform: translate(-0%, -0%);
     font-family: monospace;
     font-size: 35px; text-decoration: overline;
@@ -103,7 +101,7 @@ div[id=header]{
 #header img{
     image-rendering: pixelated;
     width: 130px; height: 100px;
-    transform: translate(-15%, +15%);
+    transform: translate(-10%, +10%);
     position: relative;
 }
 
@@ -113,42 +111,31 @@ div[id=header]{
     image-rendering: pixelated;
 }
 #container1, #container2, #container3{
-    background-color: blue;
+    background-image: linear-gradient(to right,rgb(20, 118, 163),rgb(2, 34, 46));
     opacity: 0.9;
     width: 30%; height: 60%;
     text-align: justify;
     border-style: groove;
     line-height: 25px;
     position: relative;
-    padding: 4%; color: yellow;
+    padding: 4%; color: white;
 }
 #container1{
     position: inherit;
     transform: translate(+15%, -2.5%);
     padding-top: 1%;
 }
-#container1:hover{
-background-color: yellow;
-color: black;
-font-style: italic;
+#container1:hover, #container2:hover, #container3:hover{
+color: yellow;
+font-style: italic; font-weight: 1000;
 } 
 #container2{
     position: inherit;
     transform: translate(+150%, -101%);
 }
-#container2:hover{
-    background-color: yellow;
-    color: black;
-    font-style: italic;
-}
 #container3{
     position: inherit;
     transform: translate(+85%, -47%);
-}
-#container3:hover{
-    background-color: yellow;
-    color: black;
-    font-style: italic;
 }
 a{
     text-decoration: none;
