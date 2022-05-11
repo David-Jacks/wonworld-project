@@ -1,6 +1,8 @@
 html,body{
  margin: auto;
- background-color: black;
+ background-image: url(img/web1.jpeg);
+ background-color: rgb(11, 106, 134);
+ background-blend-mode: overlay; background-repeat: repeat;
  overflow-x: hidden;
  position: relative;
 }
@@ -34,7 +36,7 @@ div[id=navigation-bar]{
     margin: 0%;
     padding: 1px;
     text-align: center;
-
+    background-color: rgb(11, 106, 134);;
     
 }
 div[id=navigation-bar] a{
@@ -48,22 +50,11 @@ padding: 1%; color: blue !important;
 padding-bottom: 1%; padding-top: 1%;
 font-family: 'Times New Roman', Times, serif;  
 }
-div[id=content]{
-    background-blend-mode: screen;
-    background-color: rgba(252, 252, 8, 0.938);
-    background-image: url(img/web3.jpeg);
-    background-size: cover;
-    margin: auto; padding-top: 5%; padding-bottom: 2%;
-    position: relative;
-    transform: translate(-0%, +0%);
-    background-repeat: no-repeat; opacity: 0.9;
-}
-
 div[id=footer]{
     padding: 2%; padding-bottom: 2%;
     background-blend-mode: screen;
     background-image: url(img/web3.jpeg);
-    background-color: rgba(247, 247, 6, 0.938); 
+    background-color: rgb(11, 106, 134);
     background-size: cover;
     margin: auto; position: relative;
     transform: translate(-0%, -0%);
@@ -90,19 +81,17 @@ div[id=footer]{
 div[id=header]{
     position: relative;
 }
-
 #header h1{
-    background-color: ;
     color: white; margin: auto; 
-    transform: translate(-0%, -0%);
+    transform: translate(+2%, -1%);
     font-family: monospace;
-    font-size: 35px; text-decoration: overline;
+    font-size: 45px; text-decoration: overline;
 }
 #header img{
     image-rendering: pixelated;
     width: 130px; height: 100px;
-    transform: translate(-10%, +10%);
-    position: relative;
+    transform: translate(-2%, +1%);
+    position: relative; border-radius: 10%;
 }
 
 #footer img{
@@ -110,32 +99,32 @@ div[id=header]{
     transform: translate(-20%, +20%);
     image-rendering: pixelated;
 }
-#container1, #container2, #container3{
+#container1, #container2, #container3 {
     background-image: linear-gradient(to right,rgb(20, 118, 163),rgb(2, 34, 46));
     opacity: 0.9;
     width: 30%; height: 60%;
     text-align: justify;
-    border-style: groove;
+    border-style: none; border-radius: 5%;
     line-height: 25px;
-    position: relative;
+    position: absolute;
     padding: 4%; color: white;
 }
 #container1{
     position: inherit;
-    transform: translate(+15%, -2.5%);
+    transform: translate(-115%, -0%);
     padding-top: 1%;
 }
 #container1:hover, #container2:hover, #container3:hover{
-color: yellow;
+color: rgb(240, 240, 52);
 font-style: italic; font-weight: 1000;
 } 
 #container2{
     position: inherit;
-    transform: translate(+150%, -101%);
+    transform: translate(-0%, -0%); padding-top: 2%; padding-bottom: 2%;
 }
 #container3{
     position: inherit;
-    transform: translate(+85%, -47%);
+    transform: translate(+110%, -230%); padding-top: 2%; padding-bottom: 0%;
 }
 a{
     text-decoration: none;
@@ -144,11 +133,12 @@ a{
     color: whitesmoke;
 }
 button{
-    background-color: black;
+    background-color: rgb(20, 156, 127);
 }
 button:hover{
-    background-color: blue;
+    background-color: rgb(1, 1, 7);
 }
-#content a:hover{
-font-style: italic;
+#great{
+    text-align: center; color: white; font-size: 60; font-weight: 1000;
+    transform: translate(-0%,+50%); font-style: italic;
 }
